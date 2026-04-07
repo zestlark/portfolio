@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+  overflow: auto; /* ✅ allow scrolling */
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: auto;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.dot-fonts {
+  font-family: "Raleway Dots", sans-serif !important;
+  font-style: normal;
+}
+
+.playfair-font {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.number-font {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.doto-font {
+  font-family: "Doto", sans-serif;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+@media (width < 767px) {
+  g > path[fill-rule="evenodd"] {
+    display: none;
+  }
+
+  #main-about-container > svg {
+    scale: 1.5;
+    transform: translateY(50px);
+  }
+}
