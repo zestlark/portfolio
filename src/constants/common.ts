@@ -212,8 +212,7 @@ export const PROJECTS = [
         url: "https://nehaseducentre.com",
         thumbnail: NEHAS_EDU_CENTRE_IMAGE,
         description: `
-            Neha’s Edu Centre is a global online tutoring platform offering personalized 1-on-1 and group sessions for IGCSE, IB, A/AS Levels, and more.
-            I designed and developed a responsive website showcasing 20+ subjects, key achievements, and the founder’s profile.`,
+           I designed and developed a responsive website showcasing 20+ subjects, key achievements, and the founder’s profile.`,
       },
       {
         label: "KHS Services",

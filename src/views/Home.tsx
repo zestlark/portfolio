@@ -6,23 +6,48 @@ import {
   LenisWrapper,
   NavComponent,
   SkillsComponent,
+  Loader,
 } from "@/components";
 import { ProjectsComponentsStack } from "@/components/Home/Project.component.stack";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate initial load or wait for assets
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <LenisWrapper>
-      <div className="w-screen overflow-x-hidden">
-        <NavComponent />
-        <HeroComponent />
-        <AboutComponent />
-        <ExperienceComponent />
-        {/* <ProjectsComponents /> */}
-        <SkillsComponent />
-        <ProjectsComponentsStack />
-        {/* <AboutComponent /> */}
-        <ContactComponent />
-      </div>
-    </LenisWrapper>
+    <>
+      <AnimatePresence mode="wait">
+        {isLoading && <Loader key="loader" />}
+      </AnimatePresence>
+
+      <LenisWrapper>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isLoading ? 0 : 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="w-screen overflow-x-hidden"
+        >
+          <NavComponent />
+          <HeroComponent />
+          <AboutComponent />
+          <ExperienceComponent />
+          {/* <ProjectsComponents /> */}
+          <SkillsComponent />
+          <ProjectsComponentsStack />
+          {/* <AboutComponent /> */}
+          <ContactComponent />
+        </motion.div>
+      </LenisWrapper>
+    </>
   );
 };
