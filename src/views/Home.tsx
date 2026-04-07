@@ -16,12 +16,17 @@ export const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate initial load or wait for assets
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+    const handleLoad = () => {
+      // Small delay for smooth feel
+      setTimeout(() => setIsLoading(false), 800);
+    };
 
-    return () => clearTimeout(timer);
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
+    }
   }, []);
 
   return (
