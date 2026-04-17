@@ -91,6 +91,7 @@ export const HeroComponent = () => {
             <div
               key={data.name}
               className="inline-flex items-center justify-center gap-2 cursor-pointer"
+              onClick={() => window.open(data.link, "_blank")}
             >
               <img alt="" src={data.image} className="w-8 h-8 rounded-full" />
               <Typography variant="appText">{data.name}</Typography>

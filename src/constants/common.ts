@@ -139,19 +139,20 @@ export const zestlark_products = [
     link: "https://zestlark.github.io/multi-llama/",
   },
   {
-    name: "Surf Space",
-    message: "customize your browsing experience",
+    name: "SurfSpace",
+    message:
+      "SurfSpace is a personalized web start page designed for managing tabs and browsing history with integrated note-taking and deep customization options.",
     time: "13 minutes ago",
-    image:
-      "https://img.freepik.com/premium-vector/s-letter-logo-colorful-gradient-design_161396-884.jpg?semt=ais_hybrid&w=740",
-    link: "https://surfspace-0.web.app/",
+    image: SURFSPACE_IMAGE,
+    link: "https://surfspace.app",
   },
   {
     name: "Filez",
-    message: "Share your public notes and documents",
+    message:
+      "A streamlined file-sharing platform designed for students to easily exchange notes and academic documents.",
     time: "a hour ago",
-    image: "https://qfm-00.web.app/favicon.ico",
-    link: "https://qfm-00.web.app/",
+    image: FILEZ_IMAGE,
+    link: "https://filez.io",
   },
   // {
   //   name: "Sleekpad",
@@ -202,29 +203,30 @@ export const PROJECTS = [
       {
         label: "Optimotion",
         url: "https://www.optimotion.in",
-        thumbnail: OPTIOMOTION_IMAGE, // optional
+        thumbnail: OPTIOMOTION_IMAGE,
         description: `Optimotion is a tech-first EV rental platform focused on affordable, flexible mobility.
-            I helped design and develop a responsive web experience for users to browse and rent EVs.
-            Built scalable pricing logic and flexible rental workflows..`,
+            I designed and developed a responsive web experience for browsing and renting EVs, including scalable pricing logic and flexible rental workflows.`,
       },
       {
         label: "Neha's Edu Centre",
         url: "https://nehaseducentre.com",
         thumbnail: NEHAS_EDU_CENTRE_IMAGE,
         description: `
-           I designed and developed a responsive website showcasing 20+ subjects, key achievements, and the founder’s profile.`,
+           Neha's Edu Centre is an online tutoring service that helps students prepare for international curricula such as IGCSE, Edexcel A/AS Level, IB-MYP, and IBDP. The centre offers both one-on-one and group online classes taught by experienced and dedicated tutors.`,
       },
       {
         label: "KHS Services",
-        url: "",
+        url: "https://khs-services.web.app",
         thumbnail: KHS_SERVICES_IMAGE,
-        description: "Corporate service site for B2B operational needs.",
+        description:
+          "KHS Services provides specialized facility management for hospitals, including building interior and exterior maintenance and services.",
       },
       {
         label: "Saahil Pvt Ltd",
-        url: "",
+        url: "https://saahilpvtltd.web.app",
         thumbnail: SAAHIL_PT_LTD_IMAGE,
-        description: "Business landing site with CMS features.",
+        description:
+          "A professional landing page for a construction company showcasing their core services and diverse project portfolio.",
       },
     ],
   },
@@ -232,37 +234,43 @@ export const PROJECTS = [
     title: "Personal Projects",
     projects: [
       {
-        label: "SurfSpace",
-        url: "https://surfspace.app",
-        thumbnail: SURFSPACE_IMAGE,
-        description:
-          "A curated web surfboard for discovering fresh tools and resources.",
+        label: zestlark_products[0].name,
+        url: zestlark_products[0].link,
+        thumbnail: zestlark_products[0].image,
+        description: zestlark_products[0].message,
+      },
+      {
+        label: zestlark_products[1].name,
+        url: zestlark_products[1].link,
+        thumbnail: zestlark_products[1].image,
+        description: zestlark_products[1].message,
       },
       {
         label: "SleekPad",
         url: "https://sleekpad.dev",
         thumbnail: SLEEKPAD_IMAGE,
-        description: "A minimalist online markdown note-taking app.",
+        description:
+          "SleekPad is a collaborative document editor that enables real-time writing and editing, revolutionizing teamwork by allowing users to seamlessly create and save documents together.",
       },
       {
-        label: "Filez",
-        url: "https://filez.io",
-        thumbnail: FILEZ_IMAGE,
-        description:
-          "Secure file transfer with link expiration and encryption.",
+        label: zestlark_products[2].name,
+        url: zestlark_products[2].link,
+        thumbnail: zestlark_products[2].image,
+        description: zestlark_products[2].message,
       },
       {
         label: "Z-Blog",
         url: "https://z-blog.vercel.app",
         thumbnail: Z_BLOG_IMAGE,
-        description: "A simple blogging CMS built with Next.js and MDX.",
+        description:
+          "A minimalist blogging platform tailored for developers to share technical insights and code.",
       },
       {
         label: "Artex",
         url: "https://zestlark.github.io/artex/",
         thumbnail: ARTEX_IMAGE,
         description:
-          "Artex is a futuristic webOS design that maximizes efficiency, allowing you to explore the digital world with minimal space and memory, all while delivering a seamless, innovative experience",
+          "Artex is a futuristic webOS concept that maximizes efficiency, allowing users to explore the digital world with minimal system overhead while delivering a seamless, innovative experience.",
       },
     ],
   },

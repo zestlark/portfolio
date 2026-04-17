@@ -90,12 +90,14 @@ export const ProjectsComponents = () => {
                         src={project.thumbnail}
                         className="h-full w-full object-cover absolute opacity-50 blur-3xl scale-150"
                         alt=""
+                        loading="lazy"
                       />
 
                       <img
                         src={project.thumbnail}
                         className="h-[400px] md:h-[500px] w-full object-cover object-top-left md:object-center rounded-2xl border-2 border-black/20 project-image"
                         alt=""
+                        loading="lazy"
                       />
 
                       {/* Chip */}
@@ -130,7 +132,7 @@ export const ProjectsComponents = () => {
                     </div>
                   </div>
                 </div>
-              ))
+              )),
             )}
           </div>
         </div>
