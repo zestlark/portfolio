@@ -144,16 +144,17 @@ export const zestlark_products = [
     message:
       "SurfSpace is a personalized web start page designed for managing tabs and browsing history with integrated note-taking and deep customization options.",
     time: "13 minutes ago",
-    image: SURFSPACE_IMAGE,
-    link: "https://surfspace.app",
+    image:
+      "https://img.freepik.com/premium-vector/s-letter-logo-colorful-gradient-design_161396-884.jpg?semt=ais_hybrid&w=740",
+    link: "https://surfspace-0.web.app/",
   },
   {
     name: "Filez",
     message:
       "A streamlined file-sharing platform designed for students to easily exchange notes and academic documents.",
     time: "a hour ago",
-    image: FILEZ_IMAGE,
-    link: "https://filez.io",
+    image: "https://qfm-00.web.app/favicon.ico",
+    link: "https://qfm-00.web.app/",
   },
   // {
   //   name: "Sleekpad",
