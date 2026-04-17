@@ -16,6 +16,7 @@ import SLEEKPAD_IMAGE from "@/assets/projects/sleekpad.png";
 import FILEZ_IMAGE from "@/assets/projects/qfm.png";
 import Z_BLOG_IMAGE from "@/assets/projects/z-blog.png";
 import ARTEX_IMAGE from "@/assets/projects/artex.png";
+import MULTI_LLAMA_IMAGE from "@/assets/projects/multi-llama.png";
 
 // Icon Imports
 import REACT_ICON from "@/assets/icons/react.icon.png";
@@ -236,13 +237,13 @@ export const PROJECTS = [
       {
         label: zestlark_products[0].name,
         url: zestlark_products[0].link,
-        thumbnail: zestlark_products[0].image,
+        thumbnail: MULTI_LLAMA_IMAGE,
         description: zestlark_products[0].message,
       },
       {
         label: zestlark_products[1].name,
         url: zestlark_products[1].link,
-        thumbnail: zestlark_products[1].image,
+        thumbnail: SURFSPACE_IMAGE,
         description: zestlark_products[1].message,
       },
       {
@@ -255,7 +256,7 @@ export const PROJECTS = [
       {
         label: zestlark_products[2].name,
         url: zestlark_products[2].link,
-        thumbnail: zestlark_products[2].image,
+        thumbnail: FILEZ_IMAGE,
         description: zestlark_products[2].message,
       },
       {

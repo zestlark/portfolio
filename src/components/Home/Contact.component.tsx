@@ -126,8 +126,12 @@ export const ContactComponent = () => {
                 <Typography variant="smallTitle" className="mb-3 text-[17px]!">
                   {cf.title}
                 </Typography>
-                {cf.items.map((ci) => (
-                  <li key={ci.name} className="py-1 cursor-pointer">
+                {cf.items.map((ci: any) => (
+                  <li
+                    key={ci.name}
+                    className="py-1 cursor-pointer"
+                    onClick={() => ci.link && window.open(ci.link, "_blank")}
+                  >
                     <Typography
                       variant="appText"
                       className="text-white/60 transition-all duration-200 hover:text-white hover:underline"
